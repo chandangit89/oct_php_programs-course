@@ -1,0 +1,16 @@
+title: oct_php_programs
+description: this is a repsitory i created for php php
+template:
+  repo: oct_php_programs-template
+  name: oct_php_programs
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
